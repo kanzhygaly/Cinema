@@ -6,7 +6,7 @@
 var cinemaApp = angular.module('cinemaApp', ['ngRoute']);
 
 // configure routes
-scotchApp.config(function ($routeProvider) {
+cinemaApp.config(function ($routeProvider) {
     $routeProvider
 
         // route for the home page
@@ -30,7 +30,6 @@ scotchApp.config(function ($routeProvider) {
 
 // create the controller and inject Angular's $scope
 cinemaApp.controller('mainController', function ($scope) {
-
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!';
 });
